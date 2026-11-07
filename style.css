@@ -148,9 +148,9 @@ header p {
 .article-main-image {
     display: block;
     width: 80%;
-    max-width: 1000px;
-    height: 400px;
-    object-fit: cover;
+    max-width: 850px;
+    height: auto;
+    object-fit: contain;
     border-radius: 16px;
     margin: 30px auto;
 }
