@@ -57,7 +57,13 @@ header p {
     text-align: left;
     z-index: 10;
 }
-
+.dropdown-menu a {
+    color: #D8CCFF;
+    text-decoration: none;
+}
+.dropdown-menu a:hover {
+    color: #FFFFFF;
+}
 .dropdown-menu.active {
     display: block;
 }
