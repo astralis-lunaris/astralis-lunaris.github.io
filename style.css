@@ -132,17 +132,18 @@ header p {
     margin: 30px auto;
 }
 .article-content {
-    max-width: 850px;
+    max-width: 740px;
     margin: 40px auto;
-    padding: 30px;
+    padding: 35px 45px;
     background: rgba(5, 12, 35, 0.85);
     border: 1px solid rgba(175, 203, 255, 0.3);
     border-radius: 16px;
     color: #E4EDFF;
     font-family: 'Manrope', sans-serif;
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 17px;
+    line-height: 1.75;
     text-align: left;
+    box-sizing: border-box;
 }
 .article-main-image {
     display: block;
@@ -229,4 +230,13 @@ h2 {
     opacity: 0.7;
     margin-top: -25px;
     font-style: italic;
+}
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        background-size: auto 100%;
+        background-position: center top;
+        background-repeat: repeat-y;
+        background-color: #050817;
+    }
 }
