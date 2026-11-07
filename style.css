@@ -253,3 +253,17 @@ h2 {
         background-color: #050817;
     }
 }
+.back-arrow {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    font-size: 38px;
+    color: #D8CCFF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-arrow:hover {
+    color: #FFFFFF;
+    transform: translateX(-5px);
+}
