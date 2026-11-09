@@ -5,7 +5,7 @@ function toggleMenu() {
 }
 
 const map = L.map('map').setView([25, 0], 2);
-
+map.attributionControl.setPrefix(false);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
