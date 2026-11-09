@@ -611,17 +611,6 @@ const planetariums = [
         website: "https://gmik.ru/",
         coords: [54.5065, 36.2585],
         note: "A major space history museum with its own planetarium, dedicated to the history of space exploration and the legacy of Konstantin Tsiolkovsky."
-    },
-    {
-        name: "Grand Novosibirsk Planetarium",
-        city: "Novosibirsk, Russia",
-        address: "Ulitsa Klyuch-Kamyshenskoye Plato, 1/1, Novosibirsk, 630114",
-        phone: "+7 383 327-05-45",
-        email: "dyuc_planeta@edu54.ru",
-        website: "https://nebo-nsk.ru/",
-        coords: [54.9675, 83.0505],
-        note: "A large educational astronomy center named after cosmonaut Anna Kikina, featuring a planetarium and space education programs."
-    }
 ];
 
 planetariums.forEach(planetarium => {
