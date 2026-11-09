@@ -603,14 +603,15 @@ const planetariums = [
         note: "A modern planetarium combined with an astronomical observatory near Lake Constance."
     },
     {
-        name: "Tsiolkovsky State Museum of the History of Cosmonautics",
-        city: "Kaluga, Russia",
-        address: "Ulitsa Akademika Koroleva, 2, Kaluga, 248000",
-        phone: "+7 484 270-50-25",
+        name: "Государственный музей истории космонавтики имени К. Э. Циолковского",
+        city: "Калуга, Россия",
+        address: "Улица Академика Королёва, 2",
+        phone: "+7 (4842) 70-50-25",
         email: null,
         website: "https://gmik.ru/",
         coords: [54.5065, 36.2585],
-        note: "A major space history museum with its own planetarium, dedicated to the history of space exploration and the legacy of Konstantin Tsiolkovsky."
+        note: "Крупный музей истории космонавтики с собственным планетарием. Посвящён истории освоения космоса и научному наследию Константина Циолковского."
+}
 ];
 
 planetariums.forEach(planetarium => {
