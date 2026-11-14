@@ -308,6 +308,7 @@ h2 {
 /* Положение Луны на телефонах */
 @media (max-width: 768px) {
     .home-page .moon-parallax {
-        width: 115vw;
+        width: 130vw;
+  top: 30px;
     }
 }
