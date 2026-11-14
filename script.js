@@ -641,3 +641,17 @@ planetariums.forEach(planetarium => {
         .addTo(map)
         .bindPopup(popup);
 });
+// Параллакс Луны при прокрутке
+const moon = document.querySelector(".moon-parallax");
+
+if (moon) {
+    function moveMoon() {
+        const scrollY = window.scrollY;
+        const moveUp = Math.min(scrollY * 0.25, 300);
+
+        moon.style.transform = `translate(-50%, -${moveUp}px)`;
+    }
+
+    window.addEventListener("scroll", moveMoon, { passive: true });
+    moveMoon();
+}
