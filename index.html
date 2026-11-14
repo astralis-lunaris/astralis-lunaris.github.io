@@ -18,6 +18,30 @@
     <p>ИССЛЕДУЙ ВСЕЛЕННУЮ</p>
     <h1>Звёздный час не наступил</h1>
     <p>Астрономия ближе, чем кажется.</p>
+        <div class="floating-planet">
+    <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="70" r="34" fill="#AFC8E8"/>
+        <path d="M68 76 Q100 45 132 76 Q100 105 68 76"
+              fill="#D8E5F5" opacity="0.35"/>
+        <ellipse cx="100" cy="70" rx="82" ry="23"
+                 fill="none" stroke="#C6D9F2"
+                 stroke-width="5" transform="rotate(-18 100 70)"/>
+        <circle cx="100" cy="70" r="34"
+                fill="url(#planetGradient)"/>
+        <defs>
+            <radialGradient id="planetGradient" cx="35%" cy="30%">
+                <stop offset="0%" stop-color="#E4F0FF"/>
+                <stop offset="100%" stop-color="#607FA8"/>
+            </radialGradient>
+        </defs>
+        <path d="M18 25 L21 33 L29 36 L21 39 L18 47 L15 39 L7 36 L15 33Z"
+              fill="#DDEBFF"/>
+        <path d="M169 25 L172 32 L179 35 L172 38 L169 45 L166 38 L159 35 L166 32Z"
+              fill="#DDEBFF"/>
+        <circle cx="43" cy="100" r="2.5" fill="#DDEBFF"/>
+        <circle cx="158" cy="105" r="2" fill="#DDEBFF"/>
+    </svg>
+</div>
 </header>
 <section class="planetariums-section">
 
