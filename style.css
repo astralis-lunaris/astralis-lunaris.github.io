@@ -313,3 +313,13 @@ h2 {
         top: 250px;
     }
 }
+.floating-planet {
+    width: 110px;
+    height: 80px;
+    margin: 25px auto;
+}
+
+.floating-planet svg {
+    width: 100%;
+    height: 100%;
+}
