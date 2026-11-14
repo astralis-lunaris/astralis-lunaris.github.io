@@ -310,6 +310,6 @@ h2 {
 @media (max-width: 768px) {
     .home-page .moon-parallax {
         width: 100vw;
-        top: 180px;
+        top: 250px;
     }
 }
