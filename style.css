@@ -285,9 +285,9 @@ h2 {
 /* Луна на главной странице */
 .home-page .moon-parallax {
     position: absolute;
-    top: 0;
+    top: 50px;
+    width: min(110vw, 1200px);
     left: 50%;
-    width: min(90vw, 1000px);
     aspect-ratio: 3 / 2;
     background-image: url("images/moon.png");
     background-size: contain;
