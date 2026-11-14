@@ -286,7 +286,7 @@ h2 {
 /* Луна на главной странице */
 .home-page .moon-parallax {
     position: absolute;
-    top: 50px;
+    top: 80px;
     width: min(110vw, 1200px);
     left: 50%;
     aspect-ratio: 3 / 2;
@@ -310,6 +310,6 @@ h2 {
 @media (max-width: 768px) {
     .home-page .moon-parallax {
         width: 100vw;
-        top: 30px;
+        top: 100px;
     }
 }
