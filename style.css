@@ -313,13 +313,28 @@ h2 {
         top: 250px;
     }
 }
+
+/* Новый логотип Astralis */
 .floating-planet {
-    width: 110px;
-    height: 80px;
-    margin: 25px auto;
+    width: 150px;
+    height: 100px;
+    margin: 10px auto 15px;
+    animation: logo-float 5s ease-in-out infinite;
 }
 
-.floating-planet svg {
+.floating-planet img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 15px rgba(145, 145, 255, 0.7));
+}
+
+@keyframes logo-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
 }
