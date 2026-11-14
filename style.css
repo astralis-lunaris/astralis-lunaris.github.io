@@ -1,9 +1,10 @@
 body {
     background-image: url("images/space.jpeg");
-    background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
     color: white;
     font-family: 'Manrope', sans-serif;
     text-align: center;
