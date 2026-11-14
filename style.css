@@ -278,3 +278,7 @@ h2 {
         background-color: #050817;
     }
 }
+.home-page {
+    background-image: none;
+    background-color: #000000;
+}
