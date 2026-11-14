@@ -352,3 +352,18 @@ h2 {
         object-fit: contain;
     }
 }
+@media (max-width: 768px) {
+    .home-page header .floating-planet {
+        width: 120px !important;
+        height: 80px !important;
+        margin: 10px auto 15px !important;
+    }
+
+    .home-page header .floating-planet img {
+        display: block;
+        width: 120px !important;
+        max-width: 120px !important;
+        height: 80px !important;
+        object-fit: contain;
+    }
+}
