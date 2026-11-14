@@ -338,3 +338,17 @@ h2 {
         transform: translateY(-8px);
     }
 }
+/* Размер логотипа на телефонах */
+@media (max-width: 768px) {
+    .home-page .floating-planet {
+        width: 120px !important;
+        height: 80px !important;
+        margin: 10px auto 15px;
+    }
+
+    .home-page .floating-planet img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
