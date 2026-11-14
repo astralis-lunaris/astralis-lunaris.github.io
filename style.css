@@ -282,3 +282,32 @@ h2 {
     background-image: none;
     background-color: #000000;
 }
+/* Луна на главной странице */
+.home-page .moon-parallax {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: min(90vw, 1000px);
+    aspect-ratio: 3 / 2;
+    background-image: url("images/moon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Контент располагается поверх Луны */
+.home-page header,
+.home-page .planetariums-section {
+    position: relative;
+    z-index: 1;
+}
+
+/* Положение Луны на телефонах */
+@media (max-width: 768px) {
+    .home-page .moon-parallax {
+        width: 115vw;
+    }
+}
