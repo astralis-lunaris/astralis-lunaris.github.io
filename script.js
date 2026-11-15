@@ -1,15 +1,24 @@
-
 function toggleMenu() {
     const menu = document.getElementById("dropdownMenu");
     menu.classList.toggle("active");
 }
 
-const map = L.map('map').setView([25, 0], 2);
-map.attributionControl.setPrefix(false);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+const worldBounds = L.latLngBounds(
+    L.latLng(-85, -180),
+    L.latLng(85, 180)
+);
 
+const map = L.map('map', {
+    maxBounds: worldBounds,
+    maxBoundsViscosity: 1
+}).setView([25, 0], 2);
+
+map.attributionControl.setPrefix(false);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+    noWrap: true
+}).addTo(map);
 const planetariums = [
     {
         name: "Королевский планетарий Эйсе Эйсинги",
