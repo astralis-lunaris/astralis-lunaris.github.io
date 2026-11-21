@@ -96,7 +96,7 @@ header p {
         transform: translateY(0);
     }
     to {
-        transform: translateY(100px);
+        transform: translateY(100vh);
     }
 }
 
@@ -502,7 +502,7 @@ button,
 
     background-size: 100% 100%;
     background-repeat: repeat;
-    animation: stars-drift 20s linear infinite;
+    animation: stars-drift 5s linear infinite;
 }
 
 @keyframes stars-drift {
