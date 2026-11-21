@@ -428,3 +428,14 @@ button,
 .science-card {
     transition: all 0.35s ease;
 }
+.article-content .article-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
