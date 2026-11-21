@@ -623,6 +623,7 @@ const planetariums = [
 }
 ];
 
+
 planetariums.forEach(planetarium => {
     const emailInfo = planetarium.email
         ? `<p><b>Электронная почта:</b> <a href="mailto:${planetarium.email}">${planetarium.email}</a></p>`
@@ -633,7 +634,7 @@ planetariums.forEach(planetarium => {
         : "";
 
     const popup = `
-        <div class="planetarium-popup">
+        <div class="planetarium-popup" style="max-width: 230px; overflow-wrap: anywhere; box-sizing: border-box;">
             <h3>${planetarium.name}</h3>
             <p><b>Местоположение:</b> ${planetarium.city}</p>
             <p><b>Адрес:</b> ${planetarium.address}</p>
@@ -648,19 +649,10 @@ planetariums.forEach(planetarium => {
 
     L.marker(planetarium.coords)
         .addTo(map)
-        .bindPopup(popup);
+        .bindPopup(popup, {
+            maxWidth: 260,
+            minWidth: 0,
+            autoPan: true,
+            autoPanPadding: [20, 20]
+        });
 });
-// Параллакс Луны при прокрутке
-const moon = document.querySelector(".moon-parallax");
-
-if (moon) {
-    function moveMoon() {
-        const scrollY = window.scrollY;
-        const moveUp = Math.min(scrollY * 0.25, 300);
-
-        moon.style.transform = `translate(-50%, -${moveUp}px)`;
-    }
-
-    window.addEventListener("scroll", moveMoon, { passive: true });
-    moveMoon();
-}
