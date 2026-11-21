@@ -632,3 +632,10 @@ button,
     line-height: 1.5;
     opacity: 0.85;
 }
+.questions-page .back-arrow {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    right: auto;
+    z-index: 1000;
+}
