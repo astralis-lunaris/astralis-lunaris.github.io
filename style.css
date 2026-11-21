@@ -130,6 +130,10 @@ header p {
     border-radius: 10px;
     margin-bottom: 15px;
 }
+.article-card img.questions-image {
+    object-fit: contain;
+    background: rgba(0, 0, 0, 0.3);
+}
 .article-card {
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
