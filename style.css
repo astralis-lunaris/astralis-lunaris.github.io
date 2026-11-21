@@ -466,3 +466,14 @@ button,
     margin: 30px auto;
     box-sizing: border-box;
 }
+.science-index-page::before {
+    background-image:
+        radial-gradient(1px 1px at 12% 18%, #BFDFFF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 35% 42%, #D7EAFF 99%, transparent),
+        radial-gradient(1px 1px at 68% 15%, #AFCBFF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 82% 63%, #E4EDFF 99%, transparent),
+        radial-gradient(1px 1px at 23% 78%, #BFDFFF 99%, transparent),
+        radial-gradient(1px 1px at 53% 88%, #D7EAFF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 91% 32%, #AFCBFF 99%, transparent),
+        radial-gradient(1px 1px at 45% 8%, #E4EDFF 99%, transparent);
+}
