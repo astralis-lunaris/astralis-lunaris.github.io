@@ -690,10 +690,7 @@ function moveStars() {
 
 window.addEventListener("scroll", moveStars, { passive: true });
 moveStars();
-// Плавное появление элементов при прокрутке
-const revealElements = document.querySelectorAll(
-    "header, .science-card, .planetarium-card"
-);
+
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
