@@ -691,27 +691,6 @@ function moveStars() {
 window.addEventListener("scroll", moveStars, { passive: true });
 moveStars();
 
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            revealObserver.unobserve(entry.target);
-        }
-    });
-}, {
-    threshold: 0.12
-});
-
-revealElements.forEach(element => {
-    element.classList.add("reveal");
-    revealObserver.observe(element);
-});
-/* Плавное появление элементов */
-.reveal {
-    opacity: 0;
-    transform: translateY(25px);
-    transition: opacity 1s ease, transform 1s ease;
-}
 
 .reveal.visible {
     opacity: 1;
