@@ -639,3 +639,22 @@ button,
     right: auto;
     z-index: 1000;
 }
+.article-return {
+    position: static;
+    width: 100%;
+    margin-top: 35px;
+    padding-bottom: 25px;
+    text-align: left;
+}
+
+.article-return a {
+    position: static;
+    display: inline-block;
+    color: #AFCBFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.article-return a:hover {
+    color: #FFFFFF;
+}
