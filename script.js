@@ -692,7 +692,3 @@ window.addEventListener("scroll", moveStars, { passive: true });
 moveStars();
 
 
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
