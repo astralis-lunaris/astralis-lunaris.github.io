@@ -101,7 +101,7 @@ header p {
 }
 
 .science-page::before {
-    animation: stars-drift 20s linear infinite;
+    animation: stars-drift 5s linear infinite;
 }
 .science-page h1 {
     font-family: 'Space Grotesk', sans-serif;
