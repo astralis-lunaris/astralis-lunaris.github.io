@@ -413,3 +413,14 @@ h2 {
 .leaflet-control-attribution a {
     color: rgba(175, 203, 255, 0.65) !important;
 }
+/* Плавность сайта */
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+button,
+.planetarium-popup,
+.science-card {
+    transition: all 0.35s ease;
+}
