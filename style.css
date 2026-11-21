@@ -613,3 +613,22 @@ button,
         radial-gradient(2px 2px at 45% 8%, #FFFFFF 99%, transparent);
     filter: drop-shadow(0 0 4px #BFC9E8);
 }
+.article-figure {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.article-figure .article-image {
+    margin: 0 auto;
+}
+
+.article-figure figcaption {
+    margin-top: 10px;
+    color: #AFCBFF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.5;
+    opacity: 0.85;
+}
