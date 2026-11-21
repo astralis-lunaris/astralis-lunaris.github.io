@@ -488,3 +488,36 @@ button,
         radial-gradient(1.5px 1.5px at 91% 32%, #E4D7FF 99%, transparent),
         radial-gradient(1px 1px at 45% 8%, #B99AFF 99%, transparent);
 }
+.exoplanets-page::before {
+    background-image:
+        radial-gradient(1px 1px at 12% 18%, #B8F0FF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 35% 42%, #D5F7FF 99%, transparent),
+        radial-gradient(1px 1px at 68% 15%, #8EDFFF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 82% 63%, #C4F0FF 99%, transparent),
+        radial-gradient(1px 1px at 23% 78%, #B8F0FF 99%, transparent),
+        radial-gradient(1px 1px at 53% 88%, #D5F7FF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 91% 32%, #8EDFFF 99%, transparent),
+        radial-gradient(1px 1px at 45% 8%, #C4F0FF 99%, transparent);
+}
+.radio-bursts-page::before {
+    background-image:
+        radial-gradient(1px 1px at 12% 18%, #A8FFF0 99%, transparent),
+        radial-gradient(1.5px 1.5px at 35% 42%, #70E8D5 99%, transparent),
+        radial-gradient(1px 1px at 68% 15%, #C5FFF5 99%, transparent),
+        radial-gradient(1.5px 1.5px at 82% 63%, #65DCCB 99%, transparent),
+        radial-gradient(1px 1px at 23% 78%, #A8FFF0 99%, transparent),
+        radial-gradient(1px 1px at 53% 88%, #70E8D5 99%, transparent),
+        radial-gradient(1.5px 1.5px at 91% 32%, #C5FFF5 99%, transparent),
+        radial-gradient(1px 1px at 45% 8%, #65DCCB 99%, transparent);
+}
+.questions-page::before {
+    background-image:
+        radial-gradient(1px 1px at 12% 18%, #E8E8F2 99%, transparent),
+        radial-gradient(1.5px 1.5px at 35% 42%, #FFFFFF 99%, transparent),
+        radial-gradient(1px 1px at 68% 15%, #C9D0E8 99%, transparent),
+        radial-gradient(1.5px 1.5px at 82% 63%, #F0F0FF 99%, transparent),
+        radial-gradient(1px 1px at 23% 78%, #E8E8F2 99%, transparent),
+        radial-gradient(1px 1px at 53% 88%, #FFFFFF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 91% 32%, #C9D0E8 99%, transparent),
+        radial-gradient(1px 1px at 45% 8%, #F0F0FF 99%, transparent);
+}
