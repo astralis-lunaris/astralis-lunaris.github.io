@@ -656,3 +656,21 @@ planetariums.forEach(planetarium => {
             autoPanPadding: [20, 20]
         });
 });
+// Параллакс звёздного пространства
+const starsFar = document.querySelector(".stars-far");
+const starsNear = document.querySelector(".stars-near");
+
+function moveStars() {
+    const scrollY = window.scrollY;
+
+    if (starsFar) {
+        starsFar.style.backgroundPosition = `0 ${-scrollY * 0.12}px`;
+    }
+
+    if (starsNear) {
+        starsNear.style.backgroundPosition = `0 ${-scrollY * 0.3}px`;
+    }
+}
+
+window.addEventListener("scroll", moveStars, { passive: true });
+moveStars();
