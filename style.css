@@ -477,3 +477,14 @@ button,
         radial-gradient(1.5px 1.5px at 91% 32%, #AFCBFF 99%, transparent),
         radial-gradient(1px 1px at 45% 8%, #E4EDFF 99%, transparent);
 }
+.black-hole-page::before {
+    background-image:
+        radial-gradient(1px 1px at 12% 18%, #D8C5FF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 35% 42%, #B99AFF 99%, transparent),
+        radial-gradient(1px 1px at 68% 15%, #E4D7FF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 82% 63%, #A98BFF 99%, transparent),
+        radial-gradient(1px 1px at 23% 78%, #D8C5FF 99%, transparent),
+        radial-gradient(1px 1px at 53% 88%, #C6B0FF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 91% 32%, #E4D7FF 99%, transparent),
+        radial-gradient(1px 1px at 45% 8%, #B99AFF 99%, transparent);
+}
