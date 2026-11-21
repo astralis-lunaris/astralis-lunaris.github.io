@@ -91,6 +91,18 @@ header p {
     background-size: 100% 100%;
     background-repeat: repeat;
 }
+@keyframes stars-drift {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100px);
+    }
+}
+
+.science-page::before {
+    animation: stars-drift 60s linear infinite;
+}
 .science-page h1 {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 48px;
