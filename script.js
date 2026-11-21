@@ -656,6 +656,22 @@ planetariums.forEach(planetarium => {
             autoPanPadding: [20, 20]
         });
 });
+
+// Параллакс Луны при прокрутке
+const moon = document.querySelector(".moon-parallax");
+
+if (moon) {
+    function moveMoon() {
+        const scrollY = window.scrollY;
+        const moveUp = Math.min(scrollY * 0.25, 300);
+
+        moon.style.transform = `translate(-50%, -${moveUp}px)`;
+    }
+
+    window.addEventListener("scroll", moveMoon, { passive: true });
+    moveMoon();
+}
+
 // Параллакс звёздного пространства
 const starsFar = document.querySelector(".stars-far");
 const starsNear = document.querySelector(".stars-near");
