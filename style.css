@@ -380,19 +380,22 @@ h2 {
     will-change: background-position;
 }
 
+
 .home-page .stars-far {
     background-image:
-        radial-gradient(1px 1px at 40px 60px, rgba(190, 200, 255, 0.55), transparent),
-        radial-gradient(1px 1px at 180px 130px, rgba(190, 200, 255, 0.4), transparent),
-        radial-gradient(1.5px 1.5px at 280px 40px, rgba(210, 215, 255, 0.5), transparent);
+        radial-gradient(1.5px 1.5px at 40px 60px, rgba(210, 220, 255, 0.85), transparent),
+        radial-gradient(1.5px 1.5px at 180px 130px, rgba(200, 210, 255, 0.75), transparent),
+        radial-gradient(2px 2px at 280px 40px, rgba(220, 225, 255, 0.8), transparent);
     background-size: 320px 240px;
+    opacity: 0.85;
 }
 
 .home-page .stars-near {
     background-image:
-        radial-gradient(2px 2px at 90px 100px, rgba(210, 205, 255, 0.7), transparent),
-        radial-gradient(1.5px 1.5px at 230px 190px, rgba(180, 195, 255, 0.6), transparent),
-        radial-gradient(2px 2px at 310px 50px, rgba(220, 215, 255, 0.5), transparent);
+        radial-gradient(2px 2px at 90px 100px, rgba(225, 220, 255, 0.95), transparent),
+        radial-gradient(2px 2px at 230px 190px, rgba(200, 215, 255, 0.9), transparent),
+        radial-gradient(2.5px 2.5px at 310px 50px, rgba(235, 225, 255, 0.95), transparent);
     background-size: 380px 300px;
-    opacity: 0.65;
+    opacity: 0.9;
 }
+
