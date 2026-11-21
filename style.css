@@ -69,12 +69,27 @@ header p {
     display: block;
 }
 .science-page {
-    background-color: #050817;
-    background-image: url("images/science.jpg");
-    background-size: 100% auto;
-    background-position: center top;
-    background-repeat: repeat-y;
-    background-attachment: scroll;
+    background-color: #02030A;
+    background-image: none;
+    position: relative;
+}
+.science-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-image:
+        radial-gradient(1px 1px at 12% 18%, #FFFFFF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 35% 42%, #FFFFFF 99%, transparent),
+        radial-gradient(1px 1px at 68% 15%, #FFFFFF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 82% 63%, #FFFFFF 99%, transparent),
+        radial-gradient(1px 1px at 23% 78%, #FFFFFF 99%, transparent),
+        radial-gradient(1px 1px at 53% 88%, #FFFFFF 99%, transparent),
+        radial-gradient(1.5px 1.5px at 91% 32%, #FFFFFF 99%, transparent),
+        radial-gradient(1px 1px at 45% 8%, #FFFFFF 99%, transparent);
+    background-size: 100% 100%;
+    background-repeat: repeat;
 }
 .science-page h1 {
     font-family: 'Space Grotesk', sans-serif;
