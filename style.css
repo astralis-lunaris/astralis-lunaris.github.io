@@ -537,3 +537,13 @@ button,
 .science-page .stars-layer {
     z-index: 0;
 }
+
+.science-index-page .back-arrow {
+    position: fixed;
+    top: 30px;
+    left: 35px;
+    right: auto;
+    margin: 0;
+    transform: none;
+    z-index: 1000;
+}
