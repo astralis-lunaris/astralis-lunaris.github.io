@@ -563,3 +563,9 @@ button,
     flex: 1;
     margin: 0;
 }
+
+.article-card-link,
+.article-card-link:visited {
+    color: #9370DB;
+    text-decoration: none;
+}
