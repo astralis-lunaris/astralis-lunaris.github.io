@@ -564,10 +564,11 @@ button,
     margin: 0;
 }
 
-.article-card-link,
-.article-card-link:visited,
-.article-card-link h2,
-.article-card-link p {
+.article-card-link {
     color: #9370DB !important;
     text-decoration: none;
+}
+
+.article-card-link:visited {
+    color: #9370DB !important;
 }
