@@ -556,8 +556,8 @@ button,
 
 /* Одинаковый размер всех карточек научного раздела */
 .science-articles .article-card-link {
-    flex: 0 0 240px;
-    width: 240px;
+    flex: 0 0 300px;
+    width: 300px;
     margin: 30px 0;
 }
 
