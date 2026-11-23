@@ -13,15 +13,15 @@
     <div class="stars-layer stars-near" aria-hidden="true"></div>
     <a href="index.html" class="back-arrow">←</a>
 
-    <h1>Наука о космосе</h1>
+    <h1 class="reveal">Наука о космосе</h1>
 
-    <p class="science-intro">
+    <p class="science-intro reveal">
         Исследуй самые удивительные явления, объекты и открытия нашей Вселенной
     </p>
 
     <section class="science-articles">
 
-        <a href="black-hole.html" class="article-card-link">
+        <a href="black-hole.html" class="article-card-link reveal">
             <div class="article-card">
                 <img src="images/black-hole.jpg" alt="Чёрная дыра">
                 <h2>Чёрные дыры</h2>
@@ -29,7 +29,7 @@
             </div>
         </a>
 
-        <a href="exoplanets.html" class="article-card-link">
+        <a href="exoplanets.html" class="article-card-link reveal">
             <div class="article-card">
                 <img src="images/exoplanet.jpeg" alt="Экзопланета">
                 <h2>Самые странные экзопланеты</h2>
@@ -37,37 +37,42 @@
             </div>
         </a>
 
-        <a href="radio-bursts.html" class="article-card-link">
+        <a href="radio-bursts.html" class="article-card-link reveal">
             <div class="article-card">
                 <img src="images/radio-bursts.jpg" alt="Быстрый радиовсплеск">
                 <h2>Таинственные сигналы из далёких галактик</h2>
                 <p>Загадочные радиосигналы, которые приходят к нам из глубин Вселенной</p>
             </div>
         </a>
-        <a href="questions.html" class="article-card-link">
-    <div class="article-card">
-        <img class="questions-image" src="images/questions.jpg" alt="Космический мем">
-        <h2>Ответы на важные вопросы</h2>
-        <p>Разбираемся в главных вопросах о космосе, про каторые не расскажут в школе</p>
-    </div>
-</a>
-       <a href="star-formation.html" class="article-card-link">
-    <div class="article-card">
-        <img src="images/star-formation.jpeg" alt="Рождение звёзд">
-        <h2>Как рождаются звёзды</h2>
-        <p>Путь от газопылевого облака до рождения новой звезды</p>
-    </div>
-</a>
-        <a href="biosignatures.html" class="article-card-link">
-    <div class="article-card">
-        <img src="images/cover-biosignatures.jpg" alt="Иллюстрация к поиску внеземной жизни">
-        <h2>Как ищут жизнь: биосигнатуры и обитаемые зоны</h2>
-        <p>Как учёные ищут потенциальные признаки жизни на далёких планетах.</p>
-    </div>
-</a>
-     </section>
+
+        <a href="questions.html" class="article-card-link reveal">
+            <div class="article-card">
+                <img class="questions-image" src="images/questions.jpg" alt="Космический мем">
+                <h2>Ответы на важные вопросы</h2>
+                <p>Разбираемся в главных вопросах о космосе, про которые не расскажут в школе</p>
+            </div>
+        </a>
+
+        <a href="star-formation.html" class="article-card-link reveal">
+            <div class="article-card">
+                <img src="images/star-formation.jpeg" alt="Рождение звёзд">
+                <h2>Как рождаются звёзды</h2>
+                <p>Путь от газопылевого облака до рождения новой звезды</p>
+            </div>
+        </a>
+
+        <a href="biosignatures.html" class="article-card-link reveal">
+            <div class="article-card">
+                <img src="images/cover-biosignatures.jpg" alt="Иллюстрация к поиску внеземной жизни">
+                <h2>Как ищут жизнь: биосигнатуры и обитаемые зоны</h2>
+                <p>Как учёные ищут потенциальные признаки жизни на далёких планетах.</p>
+            </div>
+        </a>
+
+    </section>
 
     <script>
+        // Параллакс звёзд
         const starsFar = document.querySelector(".stars-far");
         const starsNear = document.querySelector(".stars-near");
 
@@ -85,10 +90,31 @@
 
         window.addEventListener("scroll", moveStars, { passive: true });
         moveStars();
+
+        // Плавное появление элементов
+        const revealElements = document.querySelectorAll(".reveal");
+
+        revealElements.forEach((element, index) => {
+            element.style.transitionDelay = `${(index % 6) * 0.12}s`;
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        revealElements.forEach(element => observer.observe(element));
     </script>
 
 </body>
 </html>
+
 
 
 
