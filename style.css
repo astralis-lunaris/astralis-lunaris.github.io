@@ -389,7 +389,7 @@ h2 {
 
 
 
-.home-page .stars-far {
+.stars-layer {
     background-image:
         radial-gradient(1.5px 1.5px at 40px 60px, rgba(225, 232, 255, 1), transparent),
         radial-gradient(1.5px 1.5px at 180px 130px, rgba(215, 225, 255, 0.95), transparent),
@@ -399,7 +399,7 @@ h2 {
     filter: drop-shadow(0 0 3px rgba(170, 190, 255, 0.8));
 }
 
-.home-page .stars-near {
+.stars-near {
     background-image:
         radial-gradient(2px 2px at 90px 100px, rgba(245, 240, 255, 1), transparent),
         radial-gradient(2px 2px at 230px 190px, rgba(225, 235, 255, 1), transparent),
@@ -558,6 +558,7 @@ button,
 .article-return a:hover {
     color: #FFFFFF;
 }
+
 
 
 
