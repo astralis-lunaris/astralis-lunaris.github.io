@@ -547,3 +547,9 @@ button,
     transform: none;
     z-index: 1000;
 }
+
+/* Страница о рождении звёзд */
+.star-formation-page .stars-far,
+.star-formation-page .stars-near {
+    filter: drop-shadow(0 0 4px #FFD98A);
+}
