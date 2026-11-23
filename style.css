@@ -450,36 +450,6 @@ button,
     position: relative;
 }
 
-/* Цвет свечения — Наука о космосе */
-.science-index-page::before,
-.science-index-page::after {
-    filter: drop-shadow(0 0 4px #7DBBFF);
-}
-
-/* Цвет свечения — Чёрные дыры */
-.black-hole-page::before,
-.black-hole-page::after {
-    filter: drop-shadow(0 0 4px #A98BFF);
-}
-
-/* Цвет свечения — Экзопланеты */
-.exoplanets-page::before,
-.exoplanets-page::after {
-    filter: drop-shadow(0 0 4px #65CFFF);
-}
-
-/* Цвет свечения — Радиовсплески */
-.radio-bursts-page::before,
-.radio-bursts-page::after {
-    filter: drop-shadow(0 0 4px #55DCCB);
-}
-
-/* Цвет свечения — Ответы на важные вопросы */
-.questions-page::before,
-.questions-page::after {
-    filter: drop-shadow(0 0 4px #BFC9E8);
-}
-
 .article-figure {
     width: 100%;
     margin: 30px auto;
@@ -527,6 +497,7 @@ button,
 .article-return a:hover {
     color: #FFFFFF;
 }
+
 
 
 
