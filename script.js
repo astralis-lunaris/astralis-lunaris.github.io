@@ -675,12 +675,10 @@ if (moon) {
 // Параллакс звёздного пространства
 const starsFar = document.querySelector(".stars-far");
 const starsNear = document.querySelector(".stars-near");
-const sciencePages = document.querySelectorAll(".science-page");
 
 function moveStars() {
     const scrollY = window.scrollY;
 
-    // Главная страница
     if (starsFar) {
         starsFar.style.backgroundPosition = `0 ${-scrollY * 0.12}px`;
     }
@@ -688,14 +686,7 @@ function moveStars() {
     if (starsNear) {
         starsNear.style.backgroundPosition = `0 ${-scrollY * 0.3}px`;
     }
-
-    // Научные страницы
-    sciencePages.forEach(page => {
-        page.style.setProperty("--stars-far-y", `${-scrollY * 0.12}px`);
-        page.style.setProperty("--stars-near-y", `${-scrollY * 0.3}px`);
-    });
 }
 
 window.addEventListener("scroll", moveStars, { passive: true });
 moveStars();
-
