@@ -489,7 +489,7 @@ button,
 .article-return a {
     position: static;
     display: inline-block;
-    color: #AFCBFF;
+    color: #9370DB;
     text-decoration: none;
     font-size: 16px;
 }
@@ -497,7 +497,6 @@ button,
 .article-return a:hover {
     color: #FFFFFF;
 }
-
 /* Звёздные слои на научных страницах */
 .science-page .stars-layer {
     position: fixed;
@@ -572,3 +571,4 @@ button,
 .article-card-link:visited {
     color: #9370DB !important;
 }
+
