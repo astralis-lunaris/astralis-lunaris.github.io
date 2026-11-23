@@ -450,37 +450,6 @@ button,
     position: relative;
 }
 
-.science-page::before,
-.science-page::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -1;
-    background-repeat: repeat;
-    will-change: transform;
-}
-
-/* Дальний слой */
-.science-page::before {
-    background-image:
-        radial-gradient(1.5px 1.5px at 40px 60px, #FFFFFF, transparent),
-        radial-gradient(1.5px 1.5px at 180px 130px, #FFFFFF, transparent),
-        radial-gradient(2px 2px at 280px 40px, #FFFFFF, transparent);
-    background-size: 320px 240px;
-    background-position: 0 var(--stars-far-y, 0px);
-}
-
-/* Ближний слой */
-.science-page::after {
-    background-image:
-        radial-gradient(2px 2px at 90px 100px, #FFFFFF, transparent),
-        radial-gradient(2px 2px at 230px 190px, #FFFFFF, transparent),
-        radial-gradient(2.5px 2.5px at 310px 50px, #FFFFFF, transparent);
-    background-size: 380px 300px;
-    background-position: 0 var(--stars-near-y, 0px);
-}
-
 /* Цвет свечения — Наука о космосе */
 .science-index-page::before,
 .science-index-page::after {
@@ -558,6 +527,7 @@ button,
 .article-return a:hover {
     color: #FFFFFF;
 }
+
 
 
 
