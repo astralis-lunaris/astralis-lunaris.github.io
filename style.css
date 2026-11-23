@@ -465,6 +465,7 @@ button,
         radial-gradient(1.5px 1.5px at 180px 130px, #FFFFFF, transparent),
         radial-gradient(2px 2px at 280px 40px, #FFFFFF, transparent);
     background-size: 320px 240px;
+    background-position: 0 var(--stars-far-y, 0px);
 }
 
 /* Ближний слой */
@@ -474,6 +475,7 @@ button,
         radial-gradient(2px 2px at 230px 190px, #FFFFFF, transparent),
         radial-gradient(2.5px 2.5px at 310px 50px, #FFFFFF, transparent);
     background-size: 380px 300px;
+    background-position: 0 var(--stars-near-y, 0px);
 }
 
 /* Цвет свечения — Наука о космосе */
@@ -553,5 +555,6 @@ button,
 .article-return a:hover {
     color: #FFFFFF;
 }
+
 
 
