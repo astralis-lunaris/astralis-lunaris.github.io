@@ -527,3 +527,13 @@ button,
     background-size: 380px 300px;
     filter: drop-shadow(0 0 4px rgba(190, 195, 255, 0.9));
 }
+/* Содержимое научных страниц располагается поверх звёзд */
+.science-page > *:not(.stars-layer) {
+    position: relative;
+    z-index: 1;
+}
+
+/* Звёзды остаются позади содержимого */
+.science-page .stars-layer {
+    z-index: 0;
+}
