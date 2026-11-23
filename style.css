@@ -72,6 +72,8 @@ header p {
     background-color: #02030A;
     background-image: none;
     position: relative;
+    --stars-far-y: 0px;
+    --stars-near-y: 0px;
 }
 
 .science-page h1 {
@@ -555,6 +557,7 @@ button,
 .article-return a:hover {
     color: #FFFFFF;
 }
+
 
 
 
