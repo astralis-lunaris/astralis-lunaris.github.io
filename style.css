@@ -374,7 +374,7 @@ h2 {
 }
 
 /* Звёздное пространство Astralis */
-.home-page .stars-layer {
+.stars-layer {
     position: fixed;
     inset: 0;
     width: 100%;
@@ -558,6 +558,7 @@ button,
 .article-return a:hover {
     color: #FFFFFF;
 }
+
 
 
 
