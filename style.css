@@ -441,140 +441,71 @@ button,
     box-sizing: border-box;
 }
 
-/* Общий фон и движение звёзд */
+/* Общий фон и два слоя звёзд */
 .science-page {
     background-color: #02030A;
     background-image: none;
     position: relative;
 }
 
-.science-page::before {
+.science-page::before,
+.science-page::after {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: -1;
-
-    background-image:
-        radial-gradient(2px 2px at 5% 12%, #FFFFFF 99%, transparent),
-        radial-gradient(2px 2px at 12% 18%, #FFFFFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 20% 65%, #FFFFFF 99%, transparent),
-        radial-gradient(2px 2px at 28% 35%, #FFFFFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 35% 42%, #FFFFFF 99%, transparent),
-        radial-gradient(2px 2px at 43% 85%, #FFFFFF 99%, transparent),
-        radial-gradient(2px 2px at 53% 88%, #FFFFFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 62% 25%, #FFFFFF 99%, transparent),
-        radial-gradient(2px 2px at 68% 15%, #FFFFFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 75% 75%, #FFFFFF 99%, transparent),
-        radial-gradient(2px 2px at 82% 63%, #FFFFFF 99%, transparent),
-        radial-gradient(2px 2px at 91% 32%, #FFFFFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 96% 90%, #FFFFFF 99%, transparent),
-        radial-gradient(2px 2px at 45% 8%, #FFFFFF 99%, transparent);
-
-    background-size: 100% 100%;
     background-repeat: repeat;
 }
 
-
-/* Голубые звёзды — Наука о космосе */
-.science-index-page::before {
+/* Дальний слой */
+.science-page::before {
     background-image:
-        radial-gradient(2px 2px at 5% 12%, #BFDFFF 99%, transparent),
-        radial-gradient(2px 2px at 12% 18%, #D7EAFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 20% 65%, #AFCBFF 99%, transparent),
-        radial-gradient(2px 2px at 28% 35%, #E4EDFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 35% 42%, #BFDFFF 99%, transparent),
-        radial-gradient(2px 2px at 43% 85%, #D7EAFF 99%, transparent),
-        radial-gradient(2px 2px at 53% 88%, #AFCBFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 62% 25%, #E4EDFF 99%, transparent),
-        radial-gradient(2px 2px at 68% 15%, #BFDFFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 75% 75%, #D7EAFF 99%, transparent),
-        radial-gradient(2px 2px at 82% 63%, #AFCBFF 99%, transparent),
-        radial-gradient(2px 2px at 91% 32%, #E4EDFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 96% 90%, #BFDFFF 99%, transparent),
-        radial-gradient(2px 2px at 45% 8%, #D7EAFF 99%, transparent);
+        radial-gradient(1.5px 1.5px at 40px 60px, #FFFFFF, transparent),
+        radial-gradient(1.5px 1.5px at 180px 130px, #FFFFFF, transparent),
+        radial-gradient(2px 2px at 280px 40px, #FFFFFF, transparent);
+    background-size: 320px 240px;
+}
+
+/* Ближний слой */
+.science-page::after {
+    background-image:
+        radial-gradient(2px 2px at 90px 100px, #FFFFFF, transparent),
+        radial-gradient(2px 2px at 230px 190px, #FFFFFF, transparent),
+        radial-gradient(2.5px 2.5px at 310px 50px, #FFFFFF, transparent);
+    background-size: 380px 300px;
+}
+
+/* Цвет свечения — Наука о космосе */
+.science-index-page::before,
+.science-index-page::after {
     filter: drop-shadow(0 0 4px #7DBBFF);
 }
 
-/* Фиолетовые звёзды — Чёрные дыры */
-.black-hole-page::before {
-    background-image:
-        radial-gradient(2px 2px at 5% 12%, #D8C5FF 99%, transparent),
-        radial-gradient(2px 2px at 12% 18%, #B99AFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 20% 65%, #E4D7FF 99%, transparent),
-        radial-gradient(2px 2px at 28% 35%, #A98BFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 35% 42%, #D8C5FF 99%, transparent),
-        radial-gradient(2px 2px at 43% 85%, #C6B0FF 99%, transparent),
-        radial-gradient(2px 2px at 53% 88%, #E4D7FF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 62% 25%, #B99AFF 99%, transparent),
-        radial-gradient(2px 2px at 68% 15%, #D8C5FF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 75% 75%, #A98BFF 99%, transparent),
-        radial-gradient(2px 2px at 82% 63%, #E4D7FF 99%, transparent),
-        radial-gradient(2px 2px at 91% 32%, #C6B0FF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 96% 90%, #B99AFF 99%, transparent),
-        radial-gradient(2px 2px at 45% 8%, #D8C5FF 99%, transparent);
+/* Цвет свечения — Чёрные дыры */
+.black-hole-page::before,
+.black-hole-page::after {
     filter: drop-shadow(0 0 4px #A98BFF);
 }
 
-/* Голубые звёзды — Экзопланеты */
-.exoplanets-page::before {
-    background-image:
-        radial-gradient(2px 2px at 5% 12%, #B8F0FF 99%, transparent),
-        radial-gradient(2px 2px at 12% 18%, #D5F7FF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 20% 65%, #8EDFFF 99%, transparent),
-        radial-gradient(2px 2px at 28% 35%, #C4F0FF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 35% 42%, #B8F0FF 99%, transparent),
-        radial-gradient(2px 2px at 43% 85%, #D5F7FF 99%, transparent),
-        radial-gradient(2px 2px at 53% 88%, #8EDFFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 62% 25%, #C4F0FF 99%, transparent),
-        radial-gradient(2px 2px at 68% 15%, #B8F0FF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 75% 75%, #D5F7FF 99%, transparent),
-        radial-gradient(2px 2px at 82% 63%, #8EDFFF 99%, transparent),
-        radial-gradient(2px 2px at 91% 32%, #C4F0FF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 96% 90%, #B8F0FF 99%, transparent),
-        radial-gradient(2px 2px at 45% 8%, #D5F7FF 99%, transparent);
+/* Цвет свечения — Экзопланеты */
+.exoplanets-page::before,
+.exoplanets-page::after {
     filter: drop-shadow(0 0 4px #65CFFF);
 }
 
-/* Бирюзовые звёзды — Радиовсплески */
-.radio-bursts-page::before {
-    background-image:
-        radial-gradient(2px 2px at 5% 12%, #A8FFF0 99%, transparent),
-        radial-gradient(2px 2px at 12% 18%, #70E8D5 99%, transparent),
-        radial-gradient(2.5px 2.5px at 20% 65%, #C5FFF5 99%, transparent),
-        radial-gradient(2px 2px at 28% 35%, #65DCCB 99%, transparent),
-        radial-gradient(2.5px 2.5px at 35% 42%, #A8FFF0 99%, transparent),
-        radial-gradient(2px 2px at 43% 85%, #70E8D5 99%, transparent),
-        radial-gradient(2px 2px at 53% 88%, #C5FFF5 99%, transparent),
-        radial-gradient(2.5px 2.5px at 62% 25%, #65DCCB 99%, transparent),
-        radial-gradient(2px 2px at 68% 15%, #A8FFF0 99%, transparent),
-        radial-gradient(2.5px 2.5px at 75% 75%, #70E8D5 99%, transparent),
-        radial-gradient(2px 2px at 82% 63%, #C5FFF5 99%, transparent),
-        radial-gradient(2px 2px at 91% 32%, #65DCCB 99%, transparent),
-        radial-gradient(2.5px 2.5px at 96% 90%, #A8FFF0 99%, transparent),
-        radial-gradient(2px 2px at 45% 8%, #70E8D5 99%, transparent);
+/* Цвет свечения — Радиовсплески */
+.radio-bursts-page::before,
+.radio-bursts-page::after {
     filter: drop-shadow(0 0 4px #55DCCB);
 }
 
-/* Серебристые звёзды — Ответы на важные вопросы */
-.questions-page::before {
-    background-image:
-        radial-gradient(2px 2px at 5% 12%, #E8E8F2 99%, transparent),
-        radial-gradient(2px 2px at 12% 18%, #FFFFFF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 20% 65%, #C9D0E8 99%, transparent),
-        radial-gradient(2px 2px at 28% 35%, #F0F0FF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 35% 42%, #E8E8F2 99%, transparent),
-        radial-gradient(2px 2px at 43% 85%, #FFFFFF 99%, transparent),
-        radial-gradient(2px 2px at 53% 88%, #C9D0E8 99%, transparent),
-        radial-gradient(2.5px 2.5px at 62% 25%, #F0F0FF 99%, transparent),
-        radial-gradient(2px 2px at 68% 15%, #E8E8F2 99%, transparent),
-        radial-gradient(2.5px 2.5px at 75% 75%, #FFFFFF 99%, transparent),
-        radial-gradient(2px 2px at 82% 63%, #C9D0E8 99%, transparent),
-        radial-gradient(2px 2px at 91% 32%, #F0F0FF 99%, transparent),
-        radial-gradient(2.5px 2.5px at 96% 90%, #E8E8F2 99%, transparent),
-        radial-gradient(2px 2px at 45% 8%, #FFFFFF 99%, transparent);
+/* Цвет свечения — Ответы на важные вопросы */
+.questions-page::before,
+.questions-page::after {
     filter: drop-shadow(0 0 4px #BFC9E8);
 }
+
 .article-figure {
     width: 100%;
     margin: 30px auto;
@@ -594,6 +525,7 @@ button,
     line-height: 1.5;
     opacity: 0.85;
 }
+
 .questions-page .back-arrow {
     position: fixed;
     bottom: 30px;
@@ -601,25 +533,7 @@ button,
     right: auto;
     z-index: 1000;
 }
-.article-return {
-    position: static;
-    width: 100%;
-    margin-top: 35px;
-    padding-bottom: 25px;
-    text-align: left;
-}
 
-.article-return a {
-    position: static;
-    display: inline-block;
-    color: #AFCBFF;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.article-return a:hover {
-    color: #FFFFFF;
-}
 .article-return {
     position: static;
     width: 100%;
