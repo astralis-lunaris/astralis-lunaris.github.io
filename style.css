@@ -475,14 +475,6 @@ button,
     background-repeat: repeat;
 }
 
-@keyframes stars-drift {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(100px);
-    }
-}
 
 /* Голубые звёзды — Наука о космосе */
 .science-index-page::before {
@@ -647,4 +639,5 @@ button,
 .article-return a:hover {
     color: #FFFFFF;
 }
+
 
