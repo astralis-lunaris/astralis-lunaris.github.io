@@ -135,7 +135,13 @@ header p {
     background: rgba(0, 0, 0, 0.3);
 }
 .article-card {
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-7px);
+    border-color: #AFCBFF;
+    box-shadow: 0 8px 30px rgba(120, 150, 255, 0.15);
 }
 
 .article-card:hover {
@@ -587,3 +593,4 @@ button,
         transform: translateY(0);
     }
 }
+
